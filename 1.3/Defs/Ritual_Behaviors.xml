@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RitualBehaviorDef>
+		<defName>Feast</defName>
+		<durationTicks>5000</durationTicks>
+		<workerClass>TKS_Feasts.RitualBehaviorWorker_Feast</workerClass>
+		<spectatorsLabel>Guests</spectatorsLabel>
+		<spectatorGerund>enjoying</spectatorGerund>
+		<roles>
+			<li Class="RitualRoleTag">
+				<label>host</label>
+				<id>moralist</id>
+				<precept>IdeoRole_Moralist</precept>
+				<tag>Moralist</tag>
+				<maxCount>1</maxCount>
+				<substitutable>true</substitutable>
+				<countsAsParticipant>true</countsAsParticipant>
+			</li>
+		</roles>
+
+		<stages>
+			<li>
+				<defaultDuty>Feast-Goto</defaultDuty>
+				<essential>True</essential>
+				<endTriggers>
+					<li Class="TKS_Feasts.StageEndTrigger_AllPawnsArrived" />
+				</endTriggers>
+				<postAction Class="RitualStageAction_Message">
+					<text>{0}: All pawns have arrived and the feast can begin!</text>
+					<messageTypeDef>NeutralEvent</messageTypeDef>
+				</postAction>
+				<roleBehaviors></roleBehaviors>
+			</li>
+			<li>
+				<defaultDuty>Feast</defaultDuty>
+				<endTriggers>
+					<li Class="StageEndTrigger_DurationPercentage">
+						<percentage>1</percentage>
+					</li>
+				</endTriggers>
+			</li>
+		</stages>
+	</RitualBehaviorDef>
+</Defs>

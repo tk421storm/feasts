@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThoughtDef>
+		<defName>TerribleFeast</defName>
+		<thoughtClass>Thought_AttendedRitual</thoughtClass>
+		<durationDays>6</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>terrible feast</label>
+				<description>That feast was terrible. The food was bland and I hated where I was seated.</description>
+				<baseMoodEffect>-3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>BoringFeast</defName>
+		<thoughtClass>Thought_AttendedRitual</thoughtClass>
+		<durationDays>6</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>boring feast</label>
+				<description>That feast was not great. I wish I hadn't even gone.</description>
+				<baseMoodEffect>-1</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>FunFeast</defName>
+		<thoughtClass>Thought_AttendedRitual</thoughtClass>
+		<durationDays>6</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>fun feast</label>
+				<description>That feast was great! So nice to sepnd time with everyone.</description>
+				<baseMoodEffect>8</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>UnforgettableFeast</defName>
+		<thoughtClass>Thought_AttendedRitual</thoughtClass>
+		<durationDays>6</durationDays>
+		<stackLimit>3</stackLimit>
+		<stages>
+			<li>
+				<label>unforgettable feast</label>
+				<description>A feast for the ages!</description>
+				<baseMoodEffect>16</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

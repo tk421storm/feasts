@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<DutyDef>
+		<defName>Feast-Goto</defName>
+		<label>feast</label>
+		<hook>HighPriority</hook>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<!-- Get food and go to the feast location -->
+				<li Class="TKS_Feasts.JobGiver_GetFoodForFeast">
+				</li>
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+	
+	<DutyDef>
+		<defName>Feast</defName>
+		<label>feast</label>
+		<hook>HighPriority</hook>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="ThinkNode_ConditionalInGatheringArea">
+					<subNodes>
+						<!-- Sit and be socially active -->
+						<li Class="ThinkNode_ConditionalRandom">
+							<chance>0.65</chance>
+							<subNodes>
+								<li Class="TKS_Feasts.JobGiver_SitAndBeSociallyActive">
+									<ticksRange>350~750</ticksRange>
+								</li>
+							</subNodes>
+						</li>
+
+						<!-- Stand where you are and be socially active -->
+						<li Class="ThinkNode_ConditionalRandom">
+							<chance>0.35</chance>
+							<subNodes>
+								<li Class="JobGiver_StandAndBeSociallyActive">
+									<ticksRange>350~750</ticksRange>
+								</li>
+							</subNodes>
+						</li>
+
+						<!-- Get joy -->
+						<li Class="ThinkNode_ConditionalRandom">
+							<chance>0.1</chance>
+							<subNodes>
+								<li Class="JobGiver_GetJoyInGatheringArea" />
+							</subNodes>
+						</li>
+
+					</subNodes>
+				</li>
+
+				<!-- Reach the party area -->
+				<li Class="JobGiver_WanderInGatheringArea">
+					<ticksBetweenWandersRange>50~250</ticksBetweenWandersRange>
+					<locomotionUrgency>Jog</locomotionUrgency>
+				</li>
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+</Defs>

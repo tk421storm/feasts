@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualOutcomeEffectDef>
+		<defName>Feast_Outcome</defName>
+		<description>Depending on the feast quality, participants will get between {MINMOOD} and {MAXMOOD} mood for {MOODDAYS} days.</description>
+		<workerClass>RitualOutcomeEffectWorker_DanceParty</workerClass>
+		<comps>
+			<li Class="RitualOutcomeComp_RoomStat">
+				<label>room impressiveness</label>
+				<statDef>Impressiveness</statDef>
+				<curve>
+					<points>
+						<li>0,  0</li>
+						<li>50,  0.1</li>
+						<li>120, 0.2</li>
+					</points>
+				</curve>
+			</li>
+			<li Class="RitualOutcomeComp_ParticipantCount">
+				<label>participant count</label>
+				<curve>
+					<points>
+						<li>(1,  0.02)</li>
+						<li>(3,  0.2)</li>
+						<li>(6,  0.4)</li>
+						<li>(10, 0.6)</li>
+						<li>(15, .8)</li>
+					</points>
+				</curve>
+			</li>
+		</comps>
+		<outcomeChances>
+			<li>
+				<label>Terrible</label>
+				<chance>0.05</chance>
+				<memory>TerribleFeast</memory>
+				<description>The {0} was terrible! Participants endured hours of jaw-clenching small talk while waiting for it to end.</description>
+				<positivityIndex>-2</positivityIndex>
+			</li>
+			<li>
+				<label>Boring</label>
+				<chance>0.15</chance>
+				<memory>BoringFeast</memory>
+				<description>The {0} was boring. Everyone felt too awkward to open up and laugh.</description>
+				<positivityIndex>-1</positivityIndex>
+			</li>
+			<li>
+				<label>Fun</label>
+				<chance>0.6</chance>
+				<memory>FunFeast</memory>
+				<description>The {0} was fun. Everyone appreciated the chance to relax and have fun together.</description>
+				<positivityIndex>1</positivityIndex>
+			</li>
+			<li>
+				<label>Unforgettable</label>
+				<chance>0.2</chance>
+				<memory>UnforgettableFeast</memory>
+				<description>The {0} was unforgettable! Everyone learned about each other and felt like a family.</description>
+				<positivityIndex>2</positivityIndex>
+			</li>
+		</outcomeChances>
+	</RitualOutcomeEffectDef>
+</Defs>

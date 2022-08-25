@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GatheringDef>
+		<defName>Feast</defName>
+		<label>feast</label>
+		<randomSelectionWeight>1</randomSelectionWeight>
+		<letterTitle>Feast</letterTitle>
+		<letterText>{ORGANIZER_labelShort} is calling for a feast! Everyone who goes will eat, drink and be merry!</letterText>
+		<calledOffMessage>The feast has been called off.</calledOffMessage>
+		<finishedMessage>The feast is over.</finishedMessage>
+		<duty>Feast</duty>
+		<workerClass>TKS_Feasts.GatheringWorker_Feast</workerClass>
+		<gatherSpotDefs>
+			<li>FeastSpot</li>
+		</gatherSpotDefs>
+	</GatheringDef>
+</Defs>

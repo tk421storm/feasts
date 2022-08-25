@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PreceptDef>
+		<defName>Feast</defName>
+		<label>Feasts</label>
+		<tipLabelOverride>Gather, eat and drink</tipLabelOverride>
+		<description>Everyone will gather in the dining room, eat together and socialize.</description>
+		<issue>Ritual</issue>
+		<impact>Low</impact>
+		<preceptClass>Precept_Ritual</preceptClass>
+		<ritualPatternBase>FeastPattern</ritualPatternBase>
+		<iconPath>UI/Icons/Rituals/RitualFestival</iconPath>
+		<visible>true</visible>
+		<allowDuplicates>true</allowDuplicates>
+		<countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+		<ignoreLimitsInEditMode>true</ignoreLimitsInEditMode>
+		<receivesExpectationsQualityOffset>true</receivesExpectationsQualityOffset>
+		<selectionWeight>1.0</selectionWeight>
+		<exclusionTags></exclusionTags>
+		<associatedMemes></associatedMemes>
+		<requiredMemes></requiredMemes>
+	</PreceptDef>
+</Defs>

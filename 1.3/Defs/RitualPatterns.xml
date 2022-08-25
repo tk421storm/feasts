@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RitualPatternDef>
+		<defName>FeastPattern</defName>
+		<nameMaker>NamerRitualFeast</nameMaker>
+		<alwaysStartAnytime>true</alwaysStartAnytime>
+		<canStartAnytime>true</canStartAnytime>
+		<iconPathOverride>UI/Icons/Rituals/RitualFestival</iconPathOverride>
+		<ritualObligationTargetFilter>FeastSpot</ritualObligationTargetFilter>
+		<shortDescOverride>Gather, eat and drink</shortDescOverride>
+		<descOverride>Everyone will gather in the dining room, eat together and socialize.</descOverride>
+		<ritualBehavior>Feast</ritualBehavior>
+		<ritualOutcomeEffect>Feast_Outcome</ritualOutcomeEffect>
+		<tags Inherit="False" />
+		<patternGroupTag></patternGroupTag>
+	</RitualPatternDef>	
+</Defs>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>NamerRitualFeast</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_ritualname->[memeAdjective] [ritNoun]</li>
+				<li>r_ritualname->[ritNoun] of [chosenTheme]</li>
+				<li>r_ritualname->[ritNoun] of [memeConcept]</li>
+				<li>r_ritualname->[ritNoun] of [chosenIdeoName]</li>
+
+				<li>ritNoun->feast</li>
+				<li>ritNoun->celebration</li>
+				<li>ritNoun->gala</li>
+				<li>ritNoun->wassail</li>
+				<li>ritNoun->barbecue</li>
+				<li>ritNoun->festival</li>
+				<li>ritNoun->fiesta</li>
+
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>
